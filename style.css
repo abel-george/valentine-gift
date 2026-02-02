@@ -250,19 +250,51 @@ a[href="yes.html"].btn {
 }
 
 /* Responsive Design */
+/* Responsive Design */
 @media (max-width: 600px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
+    
+    .celebration-text {
+        font-size: 3rem; /* Significantly smaller for mobile */
+    }
+
     .container {
-        padding: 2rem;
-        width: 95%;
+        padding: 1.5rem;
+        width: 90%;
+        margin: 1rem;
+    }
+    
+    .teddy-bear {
+        width: 150px;
+    }
+    
+    .buttons {
+        gap: 15px;
+        flex-direction: column; /* Stack buttons on mobile for easier tapping */
+        width: 100%;
+    }
+    
+    .btn {
+        padding: 15px 30px; /* Larger vertical padding for touch target */
+        font-size: 1.2rem;
+        width: 100%; /* Full width buttons on mobile */
+    }
+    
+    .theme-toggle {
+        top: 15px;
+        right: 15px;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 2.2rem;
     }
     .teddy-bear {
-        width: 160px;
-    }
-    .btn {
-        padding: 12px 30px;
-        font-size: 1.1rem;
+        width: 120px;
     }
 }
